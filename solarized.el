@@ -157,9 +157,9 @@ Alpha should be a float between 0 and 1."
           (yellow    "#b58900")
           (orange    "#cb4b16")
           (red       "#dc322f")
-          (magenta   "#d33682")
+          (magenta   "#ee00ff")
           (violet    "#6c71c4")
-          (blue      "#268bd2")
+          (blue      "#9370db")
           (cyan      "#2aa198")
           (green     "#859900")
 
@@ -291,20 +291,16 @@ customize the resulting theme."
      `(minibuffer-prompt ((,class (:foreground ,base0))))
      `(mode-line
        ((,class (:inverse-video unspecified
-                                :overline ,s-mode-line-bg
-                                :underline ,s-mode-line-underline
-                                :foreground ,s-mode-line-fg
-                                :background ,s-mode-line-bg
-                                :box (:line-width 1 :color ,s-mode-line-bg
+                                :foreground , "#FF00EE"
+                                :background , "#00FFFF"
+                                :box (:line-width 1 :color ,"#00FFFF"
                                                   :style unspecified)))))
-     `(mode-line-buffer-id ((,class (:foreground ,s-mode-line-buffer-id-fg :weight bold))))
+     `(mode-line-buffer-id ((,class (:foreground ,"#FF00EE" :weight bold))))
      `(mode-line-inactive
        ((,class (:inverse-video unspecified
-                                :overline ,s-mode-line-inactive-bc
-                                :underline ,s-mode-line-underline
                                 :foreground ,s-mode-line-inactive-fg
                                 :background ,s-mode-line-inactive-bg
-                                :box (:line-width 1 :color ,s-mode-line-inactive-bg
+                                :box (:line-width 1 :color ,s-mode-line-inactive-bc
                                                   :style unspecified)))))
      `(region ((,class (:foreground ,base03 :background ,base1))))
      `(secondary-selection ((,class (:background ,base02))))
